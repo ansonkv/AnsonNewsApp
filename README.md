@@ -29,7 +29,6 @@ This project brings to table set of best practices, tools, and solutions:
 * Material design
 
 ## Tech-stack
-<img src="misc/image/application_anim.gif" width="336" align="right" hspace="20">
 
 Min API level is set to [`21`](https://android-arsenal.com/api?level=21), so the presented approach is suitable for over
 [85% of devices](https://developer.android.com/about/dashboards) running Android. This project takes advantage of many
@@ -72,14 +71,12 @@ be developed in isolation, independently from other features.
 [CI pipeline](circle.yml) verifies project correctness which each PR. Some of the tasks run in parallel, while
 others like `app build` will not be stared until all `static checks` and `tests` complete successfully:
 
-![ci_pipeline.jpg](misc/image/ci_pipeline.jpg)
 
 These are all of the Gradle tasks (cmd commands) that are [executed by CI](/circle.yml):
-* `./gradlew lintDebug` - runs Android lint
-* `./gradlew detekt` - runs detekt
-* `./gradlew ktlintCheck` - runs ktlint
-* `./gradlew testDebugUnitTest` - run unit tests
-* `./gradlew :app:bundleDebug` - create app bundle
+* `./gradlew test` - runs Android Unit Test
+ 
+
+
 
 
 
