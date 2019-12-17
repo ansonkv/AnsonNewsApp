@@ -67,13 +67,9 @@ Feature related code is placed inside one of the feature modules. This modulariz
 [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) in the codebase and allows for feature to
 be developed in isolation, independently from other features.
 
-## Ci pipeline
-
-[CI pipeline](circle.yml) verifies project correctness which each PR. Some of the tasks run in parallel, while
-others like `app build` will not be stared until all `static checks` and `tests` complete successfully:
 
 
-These are all of the Gradle tasks (cmd commands) that are [executed by CI](/circle.yml):
+These are all of the Gradle tasks (cmd commands) for unit testing
 * `./gradlew test` - runs Android Unit Test
  
 
