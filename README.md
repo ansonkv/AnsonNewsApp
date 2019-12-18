@@ -22,9 +22,7 @@ This project brings to table set of best practices, tools, and solutions:
 * [Android Jetpack](https://developer.android.com/jetpack)
 * A single-activity architecture, using the [Navigation component](https://developer.android.com/guide/navigation/navigation-getting-started) to manage fragment operations
 * Reactive UI
-* CI pipeline
 * Testing
-* Static analysis tools
 * Dependency Injection
 * Material design
 
@@ -49,16 +47,14 @@ good reason to use non-stable dependency.
  
 * Architecture
     * Clean Architecture (at module level)
-    * MVVM + MVI (presentation layer)
-    * [Dynamic feature modules](https://developer.android.com/studio/projects/dynamic-delivery)
+    * MVVM  (presentation layer)
     * [Android Architecture components](https://developer.android.com/topic/libraries/architecture) ([ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [Navigation](https://developer.android.com/jetpack/androidx/releases/navigation), [SafeArgs](https://developer.android.com/guide/navigation/navigation-pass-data#Safe-args) plugin)
 * Tests
     * [Unit Tests](https://en.wikipedia.org/wiki/Unit_testing) ([JUnit](https://junit.org/junit4/))
     * [Mockito](https://github.com/mockito/mockito) + [Mockito-Kotlin](https://github.com/nhaarman/mockito-kotlin)
    
 * Gradle
-    * [Gradle Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html)
-    * Custom tasks
+    
     
 
 ## Architecture
